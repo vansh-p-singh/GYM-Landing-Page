@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "ubuntu",sans-serif;
+}
+#preloader{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: fixed;
+    background: #FFFFFF url(images/preloader.gif) no-repeat  center center;
+    background-size: 20%;
+    z-index: 100;
+}
+nav img{
+    height: 6vh;
+}
+.container{
+    max-width: 80vw;
+}
+.logo{
+    font-size: 1.3rem;
+}
+.navbar{
+    display: flex;
+    height: 67px;
+}
+.navbar li{
+    list-style: none;
+    margin:0px 12px;
+    cursor: pointer;
+}
+#hamburger-btn{
+    background-color: transparent;
+    border: none;
+    font-size: 3vw;
+    color:red;
+    display: none;
+
+}
+.section1{
+    height: 87vh;
+}
+.section1 h1{
+    font-size: 1.74rem;
+}
+.topleft{
+    width: 50%;
+    height: 70vh;
+    text-align: center;
+}
+.topright{
+    width: 50%;
+    height: 70vh;
+}
+.topright>img{
+    height:80%;
+    width: 80%;
+}
+.main-btns{
+    text-align: center;
+}
+.main-btns>*{
+    height: 40px;
+    width: 120px;
+    font-size: 1.1rem;
+}
+.join-main-btn{
+    background-color: #2b2828;
+}
+.talk-main-btn{
+    background-color: white;
+    color: black;
+    border-color: #2b2828;
+}
+.section2{
+    padding-left: 63px;
+    padding-right: 63px;
+}
+.section2 h1{
+    font-size: 1.65rem;
+    margin-bottom: 5vh;
+}
+.boxes{
+    margin-top: 3vh;
+}
+.box{
+    margin: 12px 22px;
+    min-width: 28%;
+    border: 1.3px solid rgb(84, 84, 131);
+    color: #6e6262;
+}
+.box>h2{
+    background-color: #f3ecec;
+    color: #2b2828;
+    padding: 8px 0;
+}
+.box>ul{
+    list-style: none;
+}
+.box>ul>li{
+    margin: 12px 22px;
+}
+.cards{
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.card{
+    border: 2px solid rgb(34, 32, 32);
+    word-wrap: break-word;
+    border-radius: 8px;
+    margin-bottom: 5vh;
+}
+.card img{
+    height: 30vh;
+}
+.card h5{
+    font-size: 1.05rem;
+    text-align: center;
+    margin: 2vh 0;
+}
+.card-text{
+    color: #6e6262;
+    padding: 10px;
+    text-align: justify;
+}
+
+footer{
+    padding: 23px;
+    text-align: center;
+    margin-top: 10vh;
+}
+@media screen and (max-width:850px) {
+    .cards{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:760px){
+    .boxes{
+        flex-direction: column;
+        align-items: center;
+    }
+    .box{
+        width: 60%;
+    }
+    .section1>div:nth-child(1){
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .section1>div:nth-child(1)>div{
+        height: 40vh;
+        width: 60%;
+    }
+    nav{
+        position: relative;
+    }
+    #hamburger-btn{
+        display: block;
+        font-size: 5vw;
+    }
+    .logo{
+        font-size: 5vw;
+    }
+    .navbar{
+        display: none;
+        position: absolute;
+        left:0%;
+        top:41px;
+        width: 100%;
+        height: 50vh;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgb(84, 84, 131);
+    }
+    .navbar li{
+        height: calc(100% / 5);
+        border-bottom: 2px solid white;
+        color: white;
+        width: 100%;
+        text-align: center;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width:530px){
+    .section1{
+        margin-top: 8vh;
+        height: 70vh;
+    }
+    .section1>div:nth-child(1)>div{
+        width: 80%;
+        height: 35vh;
+    }
+    .topright{
+        height: 40vh;
+    }
+    .topleft{
+        height: 40vh;
+        padding: 0px;
+    }
+    .section2{
+        margin-top: 20vh;
+    }
+    .topright img{
+        width: 63vw;
+    }
+    .topleft h1{
+        font-size: 7vw;
+    }
+    .container{
+        max-width: 100vw;
+    }
+    .cards{
+        width: 100%;
+        flex-wrap: nowrap;
+    }
+    .card img{
+        height: 20vh;
+    }
+    nav{
+        height: 50px;
+    }
+    .navbar>li:nth-child(5){
+        background-color:rgb(59, 59, 83)
+    }
+    .navbar .btn{
+        border: none;
+        background-color: transparent;
+        font-size: 1.2em;
+    }
+    .main-btns{
+        margin-top: -5vh;
+    }
+    .main-btns>*{
+        height: 40px;
+        width: 110px;
+        font-size: 1rem;
+    }
+    #preloader{
+        background-size: 50%;
+    }
+}
